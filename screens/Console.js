@@ -11,9 +11,9 @@ export default function TelaC() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Tela C</Text>
+      <Text style={styles.text}>Welcome to the Game Pass</Text>
       <TouchableOpacity style={styles.button} onPress={() => navigate('/')}>
-        <Text style={styles.buttonText}>Voltar para a Tela A</Text>
+        <Text style={styles.buttonText}>Sing In Again</Text>
       </TouchableOpacity>
     </View>
   );
@@ -22,21 +22,25 @@ export default function TelaC() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    padding: 30,
+    backgroundColor: 'green',
   },
   text: {
-    fontSize: 24,
-    marginBottom: 20,
+    marginTop: 0,
+    fontSize: 30,
+    color: 'white',
+    fontWeight: '',
+    textAlign: 'center',
   },
   button: {
-    backgroundColor: 'green',
+    backgroundColor: 'white',
     padding: 10,
     borderRadius: 5,
   },
   buttonText: {
-    color: '#fff',
+    color: 'black',
     fontSize: 16,
   },
 });
