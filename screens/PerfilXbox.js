@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
 import { Link } from 'react-router-dom';
 
 export default function PerfilXbox() {
@@ -9,7 +9,7 @@ export default function PerfilXbox() {
 
   return (
     <View style={styles.container}>
-      {/* <Image style={styles.logo} source={require('../assets/draculaura.png')} /> */}
+      <Image style={styles.logo} source={require('../assets/draculaura.png')} />
     <Text style={styles.text}>Welcome back, vanysai</Text>
       <Link to="/console">
       <Text style={styles.text2}>
@@ -20,7 +20,7 @@ export default function PerfilXbox() {
       </Text>
 
         <TouchableOpacity style={styles.button} onPress={handlePress}>
-          <Text style={styles.buttonText}>Ir para o GamePass</Text>
+          <Text style={styles.buttonText}>CONECTAR O CONSOLE</Text>
         </TouchableOpacity>
       </Link>
     </View>
@@ -29,10 +29,10 @@ export default function PerfilXbox() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#0f0e0e',
+    flex: 4,
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: 'black',
   },
   text: {
     margin: 24,
@@ -58,14 +58,18 @@ const styles = StyleSheet.create({
     textDecorationLine: 'underline',
   },
   button: {
-    backgroundColor: 'green',
+    backgroundColor: '#13541a',
     padding: 10,
-    borderRadius: 5,
+    margin: 10,
+    borderRadius: 30,
+    textAlign: 'center',
+    marginTop: 150,
   },
   buttonText: {
-    color: '#fff',
-    fontSize: 16,
+    color: 'white',
     textAlign: 'center',
+    fontSize: 16,
+    fontWeight: 'bold'
   },
 
   logo: {
